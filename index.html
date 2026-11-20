@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>LCN Beauty Studio · Uñas, drenaje y maderoterapia en Hellín</title>
+<meta name="description" content="Centro de estética y bienestar en Hellín: uñas, maderoterapia, drenaje linfático y masajes con atención personalizada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAF8F5; --ink:#1A1A1A; --gold:#C5A880; --gold-d:#8F7650; --line:#E6DFD4; --soft:#F2EDE5;
+  --serif:"Playfair Display","Cormorant Garamond",Georgia,serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold-d);outline-offset:3px}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15;letter-spacing:-.01em}
+h2{font-size:clamp(1.9rem,4.4vw,2.9rem)}
+.lead{color:#5b564e;max-width:56ch}
+section{padding:clamp(64px,10vw,112px) 0}
+
+/* aviso de propuesta */
+.demo{background:var(--ink);color:#d9cfbf;font-size:.78rem;text-align:center;padding:8px 14px}
+
+/* botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 28px;border-radius:999px;font-weight:500;font-size:.95rem;border:1px solid var(--ink);transition:background .25s,color .25s,transform .25s}
+.btn-dark{background:var(--ink);color:var(--bg)}
+.btn-dark:hover{background:var(--gold-d);border-color:var(--gold-d)}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--bg)}
+.btn-sm{padding:10px 20px;font-size:.88rem}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(250,248,245,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--serif);font-size:1.35rem;letter-spacing:.02em}
+.logo span{color:var(--gold-d);font-size:.72rem;font-family:var(--sans);letter-spacing:.2em;margin-left:8px;text-transform:uppercase}
+.links{display:flex;gap:30px;font-size:.92rem}
+.links a{position:relative;padding:4px 0}
+.links a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--gold-d);transition:width .3s}
+.links a:hover::after{width:100%}
+@media(max-width:760px){.links{display:none}.logo span{display:none}}
+
+/* hero */
+.hero{padding-top:clamp(40px,7vw,88px);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,6vw,80px);align-items:center}
+.hero h1{font-size:clamp(2.5rem,7vw,4.6rem);margin-bottom:24px}
+.hero p{font-size:1.1rem;margin-bottom:34px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.arch{position:relative;aspect-ratio:3/4;max-width:420px;margin-inline:auto;width:100%}
+.arch .frame{position:absolute;inset:0;border-radius:999px 999px 18px 18px;border:1px solid var(--gold)}
+.arch .photo{position:absolute;inset:14px;border-radius:999px 999px 10px 10px;background:
+  radial-gradient(120% 70% at 50% 0%,#e9d9c2 0%,transparent 60%),linear-gradient(170deg,#d9c3a3,#b99a72 60%,#8f7650);
+  display:flex;align-items:flex-end;justify-content:center;padding:28px;color:#fffaf2;font-family:var(--serif);font-size:1.35rem;text-align:center;
+  animation:rise 1.2s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@media(max-width:820px){.hero-grid{grid-template-columns:1fr}.arch{max-width:300px;order:-1}}
+
+/* servicios */
+.head{margin-bottom:48px;display:grid;gap:14px}
+.services{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--line);gap:1px}
+.svc{background:var(--bg);padding:clamp(26px,4vw,44px);transition:background .3s}
+.svc:hover{background:var(--soft)}
+.svc svg{width:30px;height:30px;stroke:var(--gold-d);fill:none;stroke-width:1.4;margin-bottom:20px}
+.svc h3{font-size:1.45rem;margin-bottom:10px}
+.svc p{color:#5b564e;font-size:.97rem}
+@media(max-width:700px){.services{grid-template-columns:1fr}}
+
+/* resultados */
+.results{background:var(--soft)}
+.ba{position:relative;aspect-ratio:16/10;border-radius:18px;overflow:hidden;max-width:820px;margin:0 auto 14px;user-select:none;touch-action:pan-y}
+.ba .pane{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.2rem;text-align:center;padding:20px}
+.ba .after{background:linear-gradient(135deg,#d6bf9b,#a98a62);color:#fffaf2}
+.ba .before{background:linear-gradient(135deg,#cfc8bd,#aaa296);color:#2b2823;clip-path:inset(0 50% 0 0)}
+.ba .tag{position:absolute;top:14px;font-family:var(--sans);font-size:.78rem;background:rgba(26,26,26,.78);color:#fff;padding:4px 12px;border-radius:999px}
+.ba .before .tag{left:14px}.ba .after .tag{right:14px}
+.ba .bar{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#fff;pointer-events:none}
+.ba .bar::after{content:"";position:absolute;top:50%;left:50%;width:42px;height:42px;margin:-21px;border-radius:50%;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}
+.note{text-align:center;font-size:.85rem;color:#7a7368;margin-bottom:56px}
+.nails{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.nails div{aspect-ratio:1;border-radius:14px;display:flex;align-items:flex-end;padding:14px;font-size:.82rem;color:#fffaf2}
+.nails div:nth-child(1){background:linear-gradient(160deg,#e7c4bb,#c99588)}
+.nails div:nth-child(2){background:linear-gradient(160deg,#a8323a,#6e1a22)}
+.nails div:nth-child(3){background:linear-gradient(160deg,#ead9c7,#c9ac8a)}
+.nails div:nth-child(4){background:linear-gradient(160deg,#4a4540,#1A1A1A)}
+@media(max-width:700px){.nails{grid-template-columns:repeat(2,1fr)}}
+
+/* por qué */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,56px)}
+.why div{border-top:1px solid var(--gold);padding-top:22px}
+.why svg{width:28px;height:28px;stroke:var(--gold-d);fill:none;stroke-width:1.4;margin-bottom:14px}
+.why h3{font-size:1.3rem;margin-bottom:8px}
+.why p{color:#5b564e;font-size:.96rem}
+@media(max-width:760px){.why{grid-template-columns:1fr}}
+
+/* ubicación */
+.loc{background:var(--ink);color:var(--bg)}
+.loc .lead{color:#cbbfae}
+.loc-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(28px,5vw,64px)}
+.loc h2{margin-bottom:18px}
+.info{margin:28px 0;display:grid;gap:14px;font-size:.98rem}
+.hours{border-top:1px solid #3a3631}
+.hours li{list-style:none;display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #3a3631;color:#e8dfd1}
+.loc .btn-dark{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.loc .btn-dark:hover{background:#d8bf99;border-color:#d8bf99}
+.loc .btn-line{border-color:#6b6256;color:var(--bg)}
+.loc .btn-line:hover{background:var(--bg);color:var(--ink)}
+.map{border-radius:18px;overflow:hidden;min-height:340px;background:#2a2723}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;filter:grayscale(.35)}
+@media(max-width:820px){.loc-grid{grid-template-columns:1fr}}
+footer{background:var(--ink);color:#8d8478;font-size:.8rem;text-align:center;padding:0 0 28px;border-top:1px solid #2c2925}
+footer p{padding-top:24px}
+
+/* aparición suave */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.arch .photo{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="demo">Propuesta de diseño por Pablo. Fotos y horario de ejemplo.</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="logo">LCN<span>Beauty Studio</span></a>
+    <nav class="links" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+    <a class="btn btn-dark btn-sm" href="https://lcnmrjbienestar.setmore.com" target="_blank" rel="noopener">Reservar cita</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Tu bienestar, con resultados que se ven.</h1>
+        <p class="lead">Uñas, maderoterapia, drenaje linfático y masajes en Hellín. Atención personalizada en un espacio pensado para que te cuides sin prisas.</p>
+        <div class="cta">
+          <a class="btn btn-dark" href="https://lcnmrjbienestar.setmore.com" target="_blank" rel="noopener">Reservar mi sesión</a>
+          <a class="btn btn-line" href="#servicios">Ver tratamientos</a>
+        </div>
+      </div>
+      <div class="arch" aria-hidden="true">
+        <div class="frame"></div>
+        <div class="photo">Tu foto de portada</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="wrap">
+      <div class="head rv">
+        <h2>Cuatro formas de cuidarte</h2>
+        <p class="lead">Cada tratamiento se adapta a ti. Reserva online y elige el que mejor encaje con lo que necesitas.</p>
+      </div>
+      <div class="services rv">
+        <article class="svc">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c3 4 5 7 5 11a5 5 0 0 1-10 0c0-4 2-7 5-11Z"/><path d="M9 28h14"/></svg>
+          <h3>Manicura y uñas</h3>
+          <p>Diseño de uñas, semipermanente, nail art delicado y cuidado de manos para un acabado impecable que dura.</p>
+        </article>
+        <article class="svc">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 22c4-1 6-6 10-6s6 5 10 6"/><path d="M6 14c4-1 6-6 10-6s6 5 10 6"/></svg>
+          <h3>Maderoterapia</h3>
+          <p>Tratamientos corporales moldeadores, reductores y tonificantes para redefinir tu silueta con técnica manual.</p>
+        </article>
+        <article class="svc">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5c5 6 8 10 8 14a8 8 0 0 1-16 0c0-4 3-8 8-14Z"/></svg>
+          <h3>Drenaje linfático</h3>
+          <p>Masajes especializados para la retención de líquidos, la sensación de pesadez y el bienestar corporal.</p>
+        </article>
+        <article class="svc">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10"/><path d="M11 17c2 3 8 3 10 0"/><path d="M12 12h.01M20 12h.01"/></svg>
+          <h3>Masajes relajantes y terapéuticos</h3>
+          <p>Atención personalizada centrada en tu salud y tu belleza, para soltar tensión y recuperar energía.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="resultados" class="results">
+    <div class="wrap">
+      <div class="head rv">
+        <h2>Resultados reales</h2>
+        <p class="lead">Desliza para comparar el antes y el después de un tratamiento corporal, y mira algunos de nuestros diseños de uñas.</p>
+      </div>
+      <div class="ba rv" id="ba">
+        <div class="pane after"><span class="tag">Después</span>Aquí irá tu foto del después</div>
+        <div class="pane before" id="before"><span class="tag">Antes</span>Aquí irá tu foto del antes</div>
+        <div class="bar" id="bar"></div>
+        <input type="range" min="0" max="100" value="50" id="rng" aria-label="Comparar antes y después">
+      </div>
+      <p class="note">Imágenes de ejemplo. En la web final irán tus fotos, con el permiso de cada clienta.</p>
+      <div class="nails rv">
+        <div>Diseño floral</div><div>Rojo clásico</div><div>French suave</div><div>Negro y dorado</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="head rv"><h2>Por qué elegir LCN Beauty Studio</h2></div>
+      <div class="why rv">
+        <div>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 27s-10-6-10-14a6 6 0 0 1 10-4 6 6 0 0 1 10 4c0 8-10 14-10 14Z"/></svg>
+          <h3>Atención 100 % personalizada</h3>
+          <p>Escuchamos lo que necesitas y adaptamos cada sesión a ti, no a un protocolo genérico.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="m6 17 7 7L26 9"/></svg>
+          <h3>Resultados reales y visibles</h3>
+          <p>Trabajamos con técnica y constancia para que notes la diferencia, y lo puedas comprobar.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l3.5 8 8.5.8-6.4 5.7 1.9 8.5L16 22.5 8.5 27l1.9-8.5L4 12.8l8.5-.8L16 4Z"/></svg>
+          <h3>Ambiente exclusivo de bienestar</h3>
+          <p>Un espacio tranquilo y cuidado al detalle, para que desconectes desde que llegas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ubicacion" class="loc">
+    <div class="wrap loc-grid">
+      <div class="rv">
+        <h2>Ven a vernos a Hellín</h2>
+        <p class="lead">Reserva tu cita online en un minuto o escríbenos por Instagram.</p>
+        <div class="info">
+          <p>C/ Perla, n.º 1, Hellín (Albacete)</p>
+          <p>Instagram: <a href="https://www.instagram.com/lcnbeauty.hellin" target="_blank" rel="noopener" style="border-bottom:1px solid var(--gold)">@lcnbeauty.hellin</a></p>
+        </div>
+        <ul class="hours" aria-label="Horario de ejemplo">
+          <li><span>Lunes a viernes</span><span>10:00 a 20:00</span></li>
+          <li><span>Sábado</span><span>10:00 a 14:00</span></li>
+          <li><span>Domingo</span><span>Cerrado</span></li>
+        </ul>
+        <p style="font-size:.78rem;color:#8d8478;margin:10px 0 26px">Horario de ejemplo, se sustituirá por el real.</p>
+        <div class="cta">
+          <a class="btn btn-dark" href="https://lcnmrjbienestar.setmore.com" target="_blank" rel="noopener">Reservar cita</a>
+          <a class="btn btn-line" href="https://www.instagram.com/lcnbeauty.hellin" target="_blank" rel="noopener">Ver Instagram</a>
+        </div>
+      </div>
+      <div class="map rv">
+        <iframe title="Mapa de LCN Beauty Studio en Hellín" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Calle+Perla+1,+Hellín,+Albacete&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><p>© 2026 LCN Beauty Studio · Hellín, Albacete</p></footer>
+
+<script>
+(function(){
+  var rng=document.getElementById('rng'),before=document.getElementById('before'),bar=document.getElementById('bar');
+  function set(v){before.style.clipPath='inset(0 '+(100-v)+'% 0 0)';bar.style.left=v+'%'}
+  rng.addEventListener('input',function(){set(rng.value)});
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
